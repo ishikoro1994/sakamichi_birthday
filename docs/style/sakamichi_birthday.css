@@ -1,0 +1,105 @@
+@charset "utf-8";
+
+#caution_label {
+  color: red;
+}
+
+#birthday_list_tbl > thead {
+  background: lightgoldenrodyellow;
+}
+
+.grp_nogi {
+  background: #8f6addb8 !important;
+}
+
+.grp_sakura {
+  background: #ffdbed !important;
+}
+
+.grp_hinata {
+  background: #7cc7e8 !important;
+}
+
+.odd_row {
+  background-color: white;
+}
+
+.even_row {
+  background-color: floralwhite;
+}
+
+.pt_col {
+  text-align: right;
+}
+
+.grp {
+  text-align: center;
+}
+
+.name {
+  width: 6rem;
+}
+
+.head_event_name {
+  width: 200px;
+}
+
+.header_low {
+  width: 80px;
+}
+
+.header_middle {
+  width: 90px;
+}
+
+.header_high {
+  width: 100px;
+}
+
+/*ウィンドウ幅が767px以上の場合に適用*/
+@media screen and (min-width: 1025px) {
+  /*ヘッダタイトル*/
+  #head_title {
+    font-size: 25px;
+  }
+
+  #caution_label {
+    font-size: 14px;
+  }
+
+  #contact {
+    font-size: 14px;
+  }
+}
+
+/*ウィンドウ幅が最大767pxまでの場合に適用 タブレット*/
+@media screen and (max-width: 1024px) {
+  /*ヘッダタイトル*/
+  #head_title {
+    font-size: 25px;
+  }
+
+  #caution_label {
+    font-size: 14px;
+  }
+
+  #contact {
+    font-size: 14px;
+  }
+}
+
+/*ウィンドウ幅が最大479pxまでの場合に適用 スマホ*/
+@media screen and (max-width: 599px) {
+  /*ヘッダタイトル*/
+  #head_title {
+    font-size: 18px;
+  }
+
+  #caution_label {
+    font-size: 12px;
+  }
+
+  #contact {
+    font-size: 12px;
+  }
+}
