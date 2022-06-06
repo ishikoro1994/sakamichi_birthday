@@ -6,6 +6,14 @@
 
 #birthday_list_tbl > thead {
   background: lightgoldenrodyellow;
+  display: block;
+}
+
+#birthday_list_tbl > tbody {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  height: 700px;
+  display: block;
 }
 
 .grp_nogi {
@@ -32,12 +40,17 @@
   text-align: right;
 }
 
-.grp {
+.group {
+  width: 4.5rem;
   text-align: center;
 }
 
-.name {
+.member {
   width: 6rem;
+}
+
+.birthday {
+  width: 8.4rem;
 }
 
 .head_event_name {

@@ -43,22 +43,13 @@ function LoadBirthdayListJson() {
 }
 
 function SetBirthdayList() {
-    $('#birthday_list_tbl').empty();
+    $('#birthday_list_tbl tbody').empty();
 
-    var headInfo = '';
-    headInfo += '<thead style="text-align: center;">';
-    headInfo += '<tr>';
-    headInfo += '<th class="">グループ</th>';
-    headInfo += '<th class="">メンバー</th>';
-    headInfo += '<th class="">生年月日</th>';
-    headInfo += '</tr>';
-    headInfo += '</thead>';
-
-    $('#birthday_list_tbl').append(headInfo);
     $('#birthday_list_tbl').append('<tbody id="birthday_list_tbody">');
 
     var rowCnt = 0;
     var today = new Date();
+    // 今日以降のみを取得
     memberList.forEach(function(element){
         // 選択されていないグループは表示しない
         if ($.inArray(element.group.toString(), GetCheckedGrp()) < 0){
@@ -71,6 +62,7 @@ function SetBirthdayList() {
             $('#birthday_list_tbl').append(memberRow);
         }
     });
+    // 今日より前のみを取得
     memberList.forEach(function(element){
         // 選択されていないグループは表示しない
         if ($.inArray(element.group.toString(), GetCheckedGrp()) < 0){
@@ -116,13 +108,13 @@ function GetMemberRow(today, rowCnt, element, isAfter) {
     var rowClass = "odd_row";
     if (rowCnt % 2 == 0) rowClass = "even_row";
     rowInfo += '<tr class="' + rowClass + '">';
-    rowInfo += '<td class="grp '+ grpClass +'">' + element.group + '</td>';
-    rowInfo += '<td class="name">' + element.member + '</td>';
+    rowInfo += '<td class="group '+ grpClass +'">' + element.group + '</td>';
+    rowInfo += '<td class="member">' + element.member + '</td>';
     let m = element.month;
     if (m.length == 1) m = '0' + m;
     let d = element.day;
     if (d.length == 1) d = '0' + d;
-    rowInfo += '<td class="birthday">' + element.year + ' / ' + m + ' / ' + d + '</td>';
+    rowInfo += '<td class="birthday">' + element.year + '年 ' + m + '月' + d + '日' + '</td>';
     rowInfo += '</tr>';
 
     return rowInfo;

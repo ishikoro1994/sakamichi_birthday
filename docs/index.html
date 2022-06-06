@@ -3,20 +3,20 @@
         <link rel="stylesheet" href="./style/sakamichi_birthday.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="./js/sakamichi_birthday.js"></script>
-        <title>坂道現役メンバー誕生日一覧</title>
+        <title>坂道メンバー誕生日一覧</title>
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <meta name="description" content="坂道シリーズの現役メンバー誕生日一覧の一覧です。">
+        <meta name="description" content="坂道シリーズのメンバー誕生日一覧の一覧です。">
         <meta name="twitter:card" content="summary">
         <meta name="twitter:site" content="@ishikoro1994">
-        <meta name="twitter:title" content="坂道現役メンバー誕生日一覧">
-        <meta name="twitter:description" content="坂道シリーズの現役メンバー誕生日一覧の一覧です。">
+        <meta name="twitter:title" content="坂道メンバー誕生日一覧">
+        <meta name="twitter:description" content="坂道シリーズのメンバー誕生日一覧の一覧です。">
         <meta name="twitter:image" content="https://ishikoro1994.github.io/sakamichi_birthday/data/thumbnail.jpg">
     </head>
     <body>
         <h1 id="head_title">坂道現役メンバー誕生日一覧</h1>
         <p id="condition">
             <div id="select_grp">
-                <label>グループ:</label>
+                <label>表示グループ:</label>
                 <input type="checkbox" name="select_grp" id="grp_nogi" value="乃木坂46" checked>
                 <label for="grp_nogi">乃木坂46</label>
                 <input type="checkbox" name="select_grp" id="grp_sakura" value="櫻坂46" checked>
@@ -27,6 +27,13 @@
         </p>
         <p id="birthday_list">
             <table border="1" id="birthday_list_tbl">
+                <thead style="text-align: center;">
+                    <tr>
+                        <th class="group">グループ</th>
+                        <th class="member">メンバー</th>
+                        <th class="birthday">生年月日</th>
+                    </tr>
+                </thead>
             </table>
         </p>
         <div id="contact">
