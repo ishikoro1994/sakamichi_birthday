@@ -97,8 +97,14 @@
     font-size: 14px;
   }
 
-  #caution_label {
-    font-size: 14px;
+  #condition{
+    margin-top: 0.8rem;
+    font-size: 16px;
+    width: 26rem;
+  }
+
+  #birthday_list_tbody td {
+    height: 1.8rem;
   }
 
   #contact {
@@ -117,8 +123,14 @@
     font-size: 14px;
   }
 
-  #caution_label {
-    font-size: 14px;
+  #condition{
+    margin-top: 0.8rem;
+    font-size: 16px;
+    width: 26rem;
+  }
+
+  #birthday_list_tbody td {
+    height: 1.8rem;
   }
 
   #contact {
@@ -134,14 +146,20 @@
   }
 
   #description {
-    font-size: 11px;
+    font-size: 12px;
   }
 
-  #caution_label {
-    font-size: 11px;
+  #condition{
+    margin-top: 0.5rem;
+    font-size: 14.5px;
+    width: 23rem;
+  }
+
+  #birthday_list_tbody td {
+    height: 2rem;
   }
 
   #contact {
-    font-size: 11px;
+    font-size: 12px;
   }
 }
