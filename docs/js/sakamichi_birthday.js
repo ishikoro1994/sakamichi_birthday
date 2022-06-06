@@ -49,6 +49,7 @@ function SetBirthdayList() {
 
     var rowCnt = 0;
     var today = new Date();
+    var separateRowStr = '<tr class="separater"></tr>';
     // 今日以降のみを取得
     memberList.forEach(function(element){
         // 選択されていないグループは表示しない
@@ -62,6 +63,7 @@ function SetBirthdayList() {
             $('#birthday_list_tbl').append(memberRow);
         }
     });
+
     // 今日より前のみを取得
     memberList.forEach(function(element){
         // 選択されていないグループは表示しない
@@ -78,6 +80,28 @@ function SetBirthdayList() {
 
     $('#birthday_list_tbl').append('</tbody>');
     $('#birthday_list_tbl').show();
+
+    // 誕生月修正
+    var rowSpan = 1;
+    var headMonthTr;
+    var headMonth = '0月';
+    $('#birthday_list_tbody tr').each(function() {
+        var month = $(this).children('.month').text();
+        if (headMonth != month) {
+            // 最上位行もしくは、月が変わった行なら行情報更新
+            headMonthTr = this;
+            headMonth = month;
+            rowSpan = 1;
+
+            // 最上位以外ならセパレーター挿入
+            if ($('#birthday_list_tbody tr').index(this) != 0) $(this).before('<tr class="separater"></tr>');
+        }
+        else {
+            rowSpan++;
+            $(headMonthTr).children('.month').attr('rowspan', rowSpan);
+            $(this).children('.month').remove();
+        }
+    });
 }
 
 function GetCheckedGrp() {
@@ -104,10 +128,10 @@ function GetMemberRow(today, rowCnt, element, isAfter) {
     if (element.group == "乃木坂46") grpClass = GRP_NOGI_CLASS;
     if (element.group == "日向坂46") grpClass = GRP_HINATA_CLASS;
 
-    rowCnt++;
     var rowClass = "odd_row";
     if (rowCnt % 2 == 0) rowClass = "even_row";
     rowInfo += '<tr class="' + rowClass + '">';
+    rowInfo += '<td class="month month_row">' + element.month + '月</td>';
     rowInfo += '<td class="group '+ grpClass +'">' + element.group + '</td>';
     rowInfo += '<td class="member">' + element.member + '</td>';
     let m = element.month;

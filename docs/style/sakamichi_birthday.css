@@ -1,18 +1,19 @@
 @charset "utf-8";
 
+#head_title {
+  margin-bottom: unset;
+}
+
 #caution_label {
   color: red;
 }
 
 #birthday_list_tbl > thead {
-  background: lightgoldenrodyellow;
+  background: #cfebdb;
   display: block;
 }
 
 #birthday_list_tbl > tbody {
-  /* overflow-x: hidden;
-  overflow-y: scroll;
-  height: 700px; */
   display: block;
 }
 
@@ -33,10 +34,19 @@
 }
 
 .even_row {
-  background-color: floralwhite;
+  background-color: #fcfff4;
 }
 
 .pt_col {
+  text-align: right;
+}
+
+.month {
+  width: 3.3rem;
+}
+
+.month_row{
+  background-color: white;
   text-align: right;
 }
 
@@ -69,11 +79,19 @@
   width: 100px;
 }
 
+.separater {
+  height: 5px;
+}
+
 /*ウィンドウ幅が767px以上の場合に適用*/
 @media screen and (min-width: 1025px) {
   /*ヘッダタイトル*/
   #head_title {
     font-size: 25px;
+  }
+
+  #description {
+    font-size: 14px;
   }
 
   #caution_label {
@@ -92,6 +110,10 @@
     font-size: 25px;
   }
 
+  #description {
+    font-size: 14px;
+  }
+
   #caution_label {
     font-size: 14px;
   }
@@ -108,6 +130,10 @@
     font-size: 18px;
   }
 
+  #description {
+    font-size: 12px;
+  }
+
   #caution_label {
     font-size: 12px;
   }
@@ -115,10 +141,6 @@
   #contact {
     font-size: 12px;
   }
-
-  /* #birthday_list_tbl > tbody {
-    height: 430px;
-  } */
 
   .birthday {
     width: 7.4rem;
