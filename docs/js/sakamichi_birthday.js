@@ -137,7 +137,7 @@ function GetMemberRow(today, rowCnt, element, isAfter) {
     if (m.length == 1) m = '0' + m;
     let d = element.day;
     if (d.length == 1) d = '0' + d;
-    rowInfo += '<td class="birthday">' + element.year + '年 ' + m + '月' + d + '日' + '</td>';
+    rowInfo += '<td class="birthday birthday_row">' + element.year + '年 ' + m + '月' + d + '日' + '</td>';
     rowInfo += '</tr>';
 
     return rowInfo;

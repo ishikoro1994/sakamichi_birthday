@@ -4,6 +4,8 @@
   margin-bottom: unset;
 }
 
+/* border:solid #333 1px */
+
 #birthday_list_tbl > thead {
   background: #cfebdb;
   display: block;
@@ -11,6 +13,7 @@
 
 #birthday_list_tbl > tbody {
   display: block;
+  border: black 1px;
 }
 
 .grp_nogi {
@@ -59,6 +62,10 @@
   width: 8.4rem;
 }
 
+.birthday_row {
+  text-align: right;
+}
+
 .head_event_name {
   width: 200px;
 }
@@ -76,7 +83,7 @@
 }
 
 .separater {
-  height: 5px;
+  height: 7px;
 }
 
 /*ウィンドウ幅が767px以上の場合に適用*/
@@ -123,22 +130,18 @@
 @media screen and (max-width: 599px) {
   /*ヘッダタイトル*/
   #head_title {
-    font-size: 18px;
+    font-size: 17px;
   }
 
   #description {
-    font-size: 12px;
+    font-size: 11px;
   }
 
   #caution_label {
-    font-size: 12px;
+    font-size: 11px;
   }
 
   #contact {
-    font-size: 12px;
-  }
-
-  .member {
-    width: 5.5rem;
+    font-size: 11px;
   }
 }
