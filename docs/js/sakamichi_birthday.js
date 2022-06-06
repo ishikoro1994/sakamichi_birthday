@@ -49,7 +49,6 @@ function SetBirthdayList() {
 
     var rowCnt = 0;
     var today = new Date();
-    var separateRowStr = '<tr class="separater"></tr>';
     // 今日以降のみを取得
     memberList.forEach(function(element){
         // 選択されていないグループは表示しない

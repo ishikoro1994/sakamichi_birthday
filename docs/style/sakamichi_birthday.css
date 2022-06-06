@@ -4,10 +4,6 @@
   margin-bottom: unset;
 }
 
-#caution_label {
-  color: red;
-}
-
 #birthday_list_tbl > thead {
   background: #cfebdb;
   display: block;
@@ -34,7 +30,7 @@
 }
 
 .even_row {
-  background-color: #fcfff4;
+  background-color: #0000ff;
 }
 
 .pt_col {
