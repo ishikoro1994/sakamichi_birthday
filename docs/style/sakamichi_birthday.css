@@ -117,10 +117,10 @@
   }
 
   #birthday_list_tbl > tbody {
-    height: 500px;
+    height: 400px;
   }
 
   .birthday {
-    width: 8rem;
+    width: 7rem;
   }
 }
