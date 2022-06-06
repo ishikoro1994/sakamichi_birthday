@@ -94,13 +94,18 @@
   }
 
   #description {
-    font-size: 14px;
+    font-size: 15px;
   }
 
-  #condition{
+  #condition {
     margin-top: 0.8rem;
     font-size: 16px;
-    width: 26rem;
+    width: 24rem;
+  }
+
+  #today_birthday {
+    margin-top: 0.5rem;
+    margin-bottom: unset;
   }
 
   #birthday_list_tbody td {
@@ -120,13 +125,18 @@
   }
 
   #description {
-    font-size: 14px;
+    font-size: 15px;
   }
 
   #condition{
     margin-top: 0.8rem;
     font-size: 16px;
-    width: 26rem;
+    width: 24rem;
+  }
+
+  #today_birthday {
+    margin-top: 0.5rem;
+    margin-bottom: unset;
   }
 
   #birthday_list_tbody td {
@@ -149,10 +159,15 @@
     font-size: 13px;
   }
 
-  #condition{
+  #condition {
     margin-top: 0.5rem;
     font-size: 14px;
     width: 21.5rem;
+  }
+
+  #today_birthday {
+    margin-top: 0.5rem;
+    margin-bottom: unset;
   }
 
   #birthday_list_tbody td {

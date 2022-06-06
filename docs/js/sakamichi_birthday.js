@@ -2,6 +2,7 @@ const GRP_NOGI_CLASS = "grp_nogi";
 const GRP_SAKURA_CLASS = "grp_sakura";
 const GRP_HINATA_CLASS = "grp_hinata";
 var memberList = [];
+var todayBirthMember = [];
 
 /**
  * ページ読み込み時
@@ -52,7 +53,7 @@ function SetBirthdayList() {
     // 今日以降のみを取得
     memberList.forEach(function(element){
         // 選択されていないグループは表示しない
-        if ($.inArray(element.group.toString(), GetCheckedGrp()) < 0){
+        if ($.inArray(element.group.toString(), GetCheckedGrp()) < 0) {
             return;
         }
 
@@ -66,7 +67,7 @@ function SetBirthdayList() {
     // 今日より前のみを取得
     memberList.forEach(function(element){
         // 選択されていないグループは表示しない
-        if ($.inArray(element.group.toString(), GetCheckedGrp()) < 0){
+        if ($.inArray(element.group.toString(), GetCheckedGrp()) < 0) {
             return;
         }
 
@@ -78,7 +79,6 @@ function SetBirthdayList() {
     });
 
     $('#birthday_list_tbl').append('</tbody>');
-    $('#birthday_list_tbl').show();
 
     // 誕生月修正
     var rowSpan = 1;
@@ -101,6 +101,15 @@ function SetBirthdayList() {
             $(this).children('.month').remove();
         }
     });
+
+    // TODO:今日誕生日
+    // if (todayBirthMember.length > 0) {
+    //     $('#today_birthday').text('今日は</br>')
+    //     todayBirthMember.forEach(function() {
+    //         $('#today_birthday').text($('#today_birthday').text() + this);
+    //     });
+    //     $('#today_birthday').text($('#today_birthday').text() + 'の誕生日です。')
+    // }
 }
 
 function GetCheckedGrp() {
@@ -111,7 +120,8 @@ function GetCheckedGrp() {
 }
 
 function GetMemberRow(today, rowCnt, element, isAfter) {
-    var dt = new Date(today.getFullYear(), today.getMonth() + 1, today.getDate());
+    // var dt = new Date(today.getFullYear(), today.getMonth() + 1, today.getDate());
+    var dt = new Date(today.getFullYear(), today.getMonth() + 1, 8);
     var birthday = new Date(dt.getFullYear(), element.month, element.day);
 
     if (isAfter) {
@@ -120,6 +130,10 @@ function GetMemberRow(today, rowCnt, element, isAfter) {
     } else {
         // 今日より前のみを取得する
         if (dt <= birthday) return;
+    }
+
+    if (dt.getTime() == birthday.getTime()) {
+        todayBirthMember.push(element.group + ' ' + element.member);
     }
 
     var rowInfo = '';
