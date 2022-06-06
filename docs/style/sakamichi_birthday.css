@@ -10,9 +10,9 @@
 }
 
 #birthday_list_tbl > tbody {
-  overflow-x: hidden;
+  /* overflow-x: hidden;
   overflow-y: scroll;
-  height: 700px;
+  height: 700px; */
   display: block;
 }
 
@@ -116,9 +116,9 @@
     font-size: 12px;
   }
 
-  #birthday_list_tbl > tbody {
+  /* #birthday_list_tbl > tbody {
     height: 430px;
-  }
+  } */
 
   .birthday {
     width: 7.4rem;
