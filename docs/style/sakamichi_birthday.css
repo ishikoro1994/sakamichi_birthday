@@ -115,4 +115,12 @@
   #contact {
     font-size: 12px;
   }
+
+  #birthday_list_tbl > tbody {
+    height: 500px;
+  }
+
+  .birthday {
+    width: 8rem;
+  }
 }
