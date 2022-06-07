@@ -127,8 +127,7 @@ function GetCheckedGrp() {
 }
 
 function GetMemberRow(today, rowCnt, element, isAfter) {
-    // var dt = new Date(today.getFullYear(), today.getMonth() + 1, today.getDate());
-    var dt = new Date(today.getFullYear(), 9, 28);
+    var dt = new Date(today.getFullYear(), today.getMonth() + 1, today.getDate());
     var birthday = new Date(dt.getFullYear(), element.month, element.day);
 
     if (isAfter) {
