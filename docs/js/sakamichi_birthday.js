@@ -143,6 +143,10 @@ function GetMemberRow(today, rowCnt, element, isAfter) {
         return;
     }
 
+    if (element.is_graduat == '1') {
+        element.member += '(卒)';
+    }
+
     if (dt.getTime() == birthday.getTime()) {
         todayBirthMember.push(element.group + ' ' + element.member);
     }
