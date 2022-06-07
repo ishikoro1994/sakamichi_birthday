@@ -5,6 +5,7 @@
 , "年"
 , "月"
 , "日"
+, "卒業生フラグ"
 ],
 "data":[
 {
@@ -12,7 +13,8 @@
 "member":"守屋 麗奈",
 "year":"2000",
 "month":"1",
-"day":"2"
+"day":"2",
+"is_graduat":""
 }
 , 
 {
@@ -20,7 +22,8 @@
 "member":"松尾 美佑",
 "year":"2004",
 "month":"1",
-"day":"3"
+"day":"3",
+"is_graduat":""
 }
 , 
 {
@@ -28,7 +31,8 @@
 "member":"上村 莉菜",
 "year":"1997",
 "month":"1",
-"day":"4"
+"day":"4",
+"is_graduat":""
 }
 , 
 {
@@ -36,7 +40,8 @@
 "member":"梅澤 美波",
 "year":"1999",
 "month":"1",
-"day":"6"
+"day":"6",
+"is_graduat":""
 }
 , 
 {
@@ -44,7 +49,8 @@
 "member":"田村 真佑",
 "year":"1999",
 "month":"1",
-"day":"12"
+"day":"12",
+"is_graduat":""
 }
 , 
 {
@@ -52,7 +58,8 @@
 "member":"増本 綺良",
 "year":"2002",
 "month":"1",
-"day":"12"
+"day":"12",
+"is_graduat":""
 }
 , 
 {
@@ -60,7 +67,8 @@
 "member":"富田 鈴花",
 "year":"2001",
 "month":"1",
-"day":"18"
+"day":"18",
+"is_graduat":""
 }
 , 
 {
@@ -68,7 +76,8 @@
 "member":"黒見 明香",
 "year":"2004",
 "month":"1",
-"day":"19"
+"day":"19",
+"is_graduat":""
 }
 , 
 {
@@ -76,7 +85,8 @@
 "member":"佐々木 久美",
 "year":"1996",
 "month":"1",
-"day":"22"
+"day":"22",
+"is_graduat":""
 }
 , 
 {
@@ -84,7 +94,8 @@
 "member":"井上 梨名",
 "year":"2001",
 "month":"1",
-"day":"29"
+"day":"29",
+"is_graduat":""
 }
 , 
 {
@@ -92,7 +103,8 @@
 "member":"樋口 日奈",
 "year":"1998",
 "month":"1",
-"day":"31"
+"day":"31",
+"is_graduat":""
 }
 , 
 {
@@ -100,7 +112,8 @@
 "member":"岩本 蓮加",
 "year":"2004",
 "month":"2",
-"day":"2"
+"day":"2",
+"is_graduat":""
 }
 , 
 {
@@ -108,7 +121,8 @@
 "member":"加藤 史帆",
 "year":"1998",
 "month":"2",
-"day":"2"
+"day":"2",
+"is_graduat":""
 }
 , 
 {
@@ -116,7 +130,8 @@
 "member":"弓木 奈於",
 "year":"1999",
 "month":"2",
-"day":"3"
+"day":"3",
+"is_graduat":""
 }
 , 
 {
@@ -124,7 +139,8 @@
 "member":"齋藤 冬優花",
 "year":"1998",
 "month":"2",
-"day":"15"
+"day":"15",
+"is_graduat":""
 }
 , 
 {
@@ -132,7 +148,8 @@
 "member":"丹生 明里",
 "year":"2001",
 "month":"2",
-"day":"15"
+"day":"15",
+"is_graduat":""
 }
 , 
 {
@@ -140,7 +157,8 @@
 "member":"森本 茉莉",
 "year":"2004",
 "month":"2",
-"day":"23"
+"day":"23",
+"is_graduat":""
 }
 , 
 {
@@ -148,7 +166,8 @@
 "member":"山口 陽世",
 "year":"2004",
 "month":"2",
-"day":"23"
+"day":"23",
+"is_graduat":""
 }
 , 
 {
@@ -156,7 +175,8 @@
 "member":"渡邉 美穂",
 "year":"2000",
 "month":"2",
-"day":"24"
+"day":"24",
+"is_graduat":""
 }
 , 
 {
@@ -164,7 +184,8 @@
 "member":"柴田 柚菜",
 "year":"2003",
 "month":"3",
-"day":"3"
+"day":"3",
+"is_graduat":""
 }
 , 
 {
@@ -172,7 +193,8 @@
 "member":"鈴木 絢音",
 "year":"1999",
 "month":"3",
-"day":"5"
+"day":"5",
+"is_graduat":""
 }
 , 
 {
@@ -180,7 +202,8 @@
 "member":"佐藤 楓",
 "year":"1998",
 "month":"3",
-"day":"23"
+"day":"23",
+"is_graduat":""
 }
 , 
 {
@@ -188,7 +211,8 @@
 "member":"武元 唯衣",
 "year":"2002",
 "month":"3",
-"day":"23"
+"day":"23",
+"is_graduat":""
 }
 , 
 {
@@ -196,7 +220,8 @@
 "member":"上村 ひなの",
 "year":"2004",
 "month":"4",
-"day":"12"
+"day":"12",
+"is_graduat":""
 }
 , 
 {
@@ -204,7 +229,8 @@
 "member":"遠藤 光莉",
 "year":"1999",
 "month":"4",
-"day":"17"
+"day":"17",
+"is_graduat":""
 }
 , 
 {
@@ -212,7 +238,8 @@
 "member":"大園 玲",
 "year":"2000",
 "month":"4",
-"day":"18"
+"day":"18",
+"is_graduat":""
 }
 , 
 {
@@ -220,7 +247,8 @@
 "member":"和田 まあや",
 "year":"1998",
 "month":"4",
-"day":"23"
+"day":"23",
+"is_graduat":""
 }
 , 
 {
@@ -228,7 +256,8 @@
 "member":"松田 好花",
 "year":"1999",
 "month":"4",
-"day":"27"
+"day":"27",
+"is_graduat":""
 }
 , 
 {
@@ -236,7 +265,8 @@
 "member":"宮田 愛萌",
 "year":"1998",
 "month":"4",
-"day":"28"
+"day":"28",
+"is_graduat":""
 }
 , 
 {
@@ -244,7 +274,8 @@
 "member":"与田 祐希",
 "year":"2000",
 "month":"5",
-"day":"5"
+"day":"5",
+"is_graduat":""
 }
 , 
 {
@@ -252,7 +283,8 @@
 "member":"原田 葵",
 "year":"2000",
 "month":"5",
-"day":"7"
+"day":"7",
+"is_graduat":""
 }
 , 
 {
@@ -260,7 +292,8 @@
 "member":"影山 優佳",
 "year":"2001",
 "month":"5",
-"day":"8"
+"day":"8",
+"is_graduat":""
 }
 , 
 {
@@ -268,7 +301,8 @@
 "member":"山崎 怜奈",
 "year":"1997",
 "month":"5",
-"day":"21"
+"day":"21",
+"is_graduat":""
 }
 , 
 {
@@ -276,7 +310,8 @@
 "member":"筒井 あやめ",
 "year":"2004",
 "month":"6",
-"day":"8"
+"day":"8",
+"is_graduat":""
 }
 , 
 {
@@ -284,7 +319,8 @@
 "member":"関 有美子",
 "year":"1998",
 "month":"6",
-"day":"29"
+"day":"29",
+"is_graduat":""
 }
 , 
 {
@@ -292,7 +328,8 @@
 "member":"土生 瑞穂",
 "year":"1997",
 "month":"7",
-"day":"7"
+"day":"7",
+"is_graduat":""
 }
 , 
 {
@@ -300,7 +337,8 @@
 "member":"森田 ひかる",
 "year":"2001",
 "month":"7",
-"day":"10"
+"day":"10",
+"is_graduat":""
 }
 , 
 {
@@ -308,7 +346,8 @@
 "member":"久保 史緒里",
 "year":"2001",
 "month":"7",
-"day":"14"
+"day":"14",
+"is_graduat":""
 }
 , 
 {
@@ -316,7 +355,8 @@
 "member":"河田 陽菜",
 "year":"2001",
 "month":"7",
-"day":"23"
+"day":"23",
+"is_graduat":""
 }
 , 
 {
@@ -324,7 +364,8 @@
 "member":"山下 美月",
 "year":"1999",
 "month":"7",
-"day":"26"
+"day":"26",
+"is_graduat":""
 }
 , 
 {
@@ -332,7 +373,8 @@
 "member":"渡邉 理佐",
 "year":"1998",
 "month":"7",
-"day":"27"
+"day":"27",
+"is_graduat":"1"
 }
 , 
 {
@@ -340,7 +382,8 @@
 "member":"清宮 レイ",
 "year":"2003",
 "month":"8",
-"day":"1"
+"day":"1",
+"is_graduat":""
 }
 , 
 {
@@ -348,7 +391,8 @@
 "member":"賀喜 遥香",
 "year":"2001",
 "month":"8",
-"day":"8"
+"day":"8",
+"is_graduat":""
 }
 , 
 {
@@ -356,7 +400,8 @@
 "member":"北川 悠理",
 "year":"2001",
 "month":"8",
-"day":"8"
+"day":"8",
+"is_graduat":""
 }
 , 
 {
@@ -364,7 +409,8 @@
 "member":"佐藤 璃果",
 "year":"2001",
 "month":"8",
-"day":"9"
+"day":"9",
+"is_graduat":""
 }
 , 
 {
@@ -372,7 +418,8 @@
 "member":"齋藤 飛鳥",
 "year":"1998",
 "month":"8",
-"day":"10"
+"day":"10",
+"is_graduat":""
 }
 , 
 {
@@ -380,7 +427,8 @@
 "member":"矢久保 美緒",
 "year":"2002",
 "month":"8",
-"day":"14"
+"day":"14",
+"is_graduat":""
 }
 , 
 {
@@ -388,7 +436,8 @@
 "member":"秋元 真夏",
 "year":"1993",
 "month":"8",
-"day":"20"
+"day":"20",
+"is_graduat":""
 }
 , 
 {
@@ -396,7 +445,8 @@
 "member":"向井 葉月",
 "year":"1999",
 "month":"8",
-"day":"23"
+"day":"23",
+"is_graduat":""
 }
 , 
 {
@@ -404,7 +454,8 @@
 "member":"東村 芽依",
 "year":"1998",
 "month":"8",
-"day":"23"
+"day":"23",
+"is_graduat":""
 }
 , 
 {
@@ -412,7 +463,8 @@
 "member":"早川 聖来",
 "year":"2000",
 "month":"8",
-"day":"24"
+"day":"24",
+"is_graduat":""
 }
 , 
 {
@@ -420,7 +472,8 @@
 "member":"藤吉 夏鈴",
 "year":"2001",
 "month":"8",
-"day":"29"
+"day":"29",
+"is_graduat":""
 }
 , 
 {
@@ -428,7 +481,8 @@
 "member":"齊藤 京子",
 "year":"1997",
 "month":"9",
-"day":"5"
+"day":"5",
+"is_graduat":""
 }
 , 
 {
@@ -436,7 +490,8 @@
 "member":"吉田 綾乃クリスティー",
 "year":"1995",
 "month":"9",
-"day":"6"
+"day":"6",
+"is_graduat":""
 }
 , 
 {
@@ -444,7 +499,8 @@
 "member":"小坂 菜緒",
 "year":"2002",
 "month":"9",
-"day":"7"
+"day":"7",
+"is_graduat":""
 }
 , 
 {
@@ -452,7 +508,8 @@
 "member":"金村 美玖",
 "year":"2002",
 "month":"9",
-"day":"10"
+"day":"10",
+"is_graduat":""
 }
 , 
 {
@@ -460,7 +517,8 @@
 "member":"高瀬 愛奈",
 "year":"1998",
 "month":"9",
-"day":"20"
+"day":"20",
+"is_graduat":""
 }
 , 
 {
@@ -468,7 +526,8 @@
 "member":"中村 麗乃",
 "year":"2001",
 "month":"9",
-"day":"27"
+"day":"27",
+"is_graduat":""
 }
 , 
 {
@@ -476,7 +535,8 @@
 "member":"髙橋 未来虹",
 "year":"2003",
 "month":"9",
-"day":"27"
+"day":"27",
+"is_graduat":""
 }
 , 
 {
@@ -484,7 +544,8 @@
 "member":"山﨑 天",
 "year":"2005",
 "month":"9",
-"day":"28"
+"day":"28",
+"is_graduat":""
 }
 , 
 {
@@ -492,7 +553,8 @@
 "member":"濱岸 ひより",
 "year":"2002",
 "month":"9",
-"day":"28"
+"day":"28",
+"is_graduat":""
 }
 , 
 {
@@ -500,7 +562,8 @@
 "member":"林 瑠奈",
 "year":"2003",
 "month":"10",
-"day":"2"
+"day":"2",
+"is_graduat":""
 }
 , 
 {
@@ -508,7 +571,8 @@
 "member":"遠藤 さくら",
 "year":"2001",
 "month":"10",
-"day":"3"
+"day":"3",
+"is_graduat":""
 }
 , 
 {
@@ -516,7 +580,8 @@
 "member":"尾関 梨香",
 "year":"1997",
 "month":"10",
-"day":"7"
+"day":"7",
+"is_graduat":""
 }
 , 
 {
@@ -524,7 +589,8 @@
 "member":"伊藤 理々杏",
 "year":"2002",
 "month":"10",
-"day":"8"
+"day":"8",
+"is_graduat":""
 }
 , 
 {
@@ -532,7 +598,8 @@
 "member":"大沼 晶保",
 "year":"1999",
 "month":"10",
-"day":"12"
+"day":"12",
+"is_graduat":""
 }
 , 
 {
@@ -540,7 +607,8 @@
 "member":"松田 里奈",
 "year":"1999",
 "month":"10",
-"day":"13"
+"day":"13",
+"is_graduat":""
 }
 , 
 {
@@ -548,7 +616,8 @@
 "member":"田村 保乃",
 "year":"1998",
 "month":"10",
-"day":"21"
+"day":"21",
+"is_graduat":""
 }
 , 
 {
@@ -556,7 +625,8 @@
 "member":"小林 由依",
 "year":"1999",
 "month":"10",
-"day":"23"
+"day":"23",
+"is_graduat":""
 }
 , 
 {
@@ -564,7 +634,8 @@
 "member":"金川 紗耶",
 "year":"2001",
 "month":"10",
-"day":"31"
+"day":"31",
+"is_graduat":""
 }
 , 
 {
@@ -572,7 +643,8 @@
 "member":"高本 彩花",
 "year":"1998",
 "month":"11",
-"day":"2"
+"day":"2",
+"is_graduat":""
 }
 , 
 {
@@ -580,7 +652,8 @@
 "member":"阪口 珠美",
 "year":"2001",
 "month":"11",
-"day":"10"
+"day":"10",
+"is_graduat":""
 }
 , 
 {
@@ -588,7 +661,8 @@
 "member":"小池 美波",
 "year":"1998",
 "month":"11",
-"day":"14"
+"day":"14",
+"is_graduat":""
 }
 , 
 {
@@ -596,7 +670,8 @@
 "member":"掛橋 沙耶香",
 "year":"2002",
 "month":"11",
-"day":"20"
+"day":"20",
+"is_graduat":""
 }
 , 
 {
@@ -604,7 +679,8 @@
 "member":"菅井 友香",
 "year":"1995",
 "month":"11",
-"day":"29"
+"day":"29",
+"is_graduat":""
 }
 , 
 {
@@ -612,7 +688,8 @@
 "member":"佐々木 美玲",
 "year":"1999",
 "month":"12",
-"day":"17"
+"day":"17",
+"is_graduat":""
 }
 , 
 {
@@ -620,7 +697,8 @@
 "member":"幸阪 茉里乃",
 "year":"2002",
 "month":"12",
-"day":"19"
+"day":"19",
+"is_graduat":""
 }
 , 
 {
@@ -628,7 +706,8 @@
 "member":"潮 紗理菜",
 "year":"1997",
 "month":"12",
-"day":"26"
+"day":"26",
+"is_graduat":""
 }
 ]
 }

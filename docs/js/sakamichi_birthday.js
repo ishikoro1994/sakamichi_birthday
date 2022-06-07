@@ -33,6 +33,10 @@ $(function() {
     $('input[name="select_grp"]').on('change', function() {
         SetBirthdayList();
     });
+
+    $('#graduat_isdisp').on('change', function() {
+        SetBirthdayList();
+    });
 });
 
 function LoadBirthdayListJson() {
@@ -102,14 +106,15 @@ function SetBirthdayList() {
         }
     });
 
-    // TODO:今日誕生日
-    // if (todayBirthMember.length > 0) {
-    //     $('#today_birthday').text('今日は</br>')
-    //     todayBirthMember.forEach(function() {
-    //         $('#today_birthday').text($('#today_birthday').text() + this);
-    //     });
-    //     $('#today_birthday').text($('#today_birthday').text() + 'の誕生日です。')
-    // }
+    if (todayBirthMember.length > 0) {
+        $('#today_birthday').append('今日は下記メンバーのお誕生日です。');
+        $('#today_birthday').append('</br>');
+        todayBirthMember.forEach(function(e) {
+            $('#today_birthday').append('・' + e.toString() + 'さん');
+            $('#today_birthday').append('</br>');
+        });
+        $('#today_birthday').append('おめでとうございます！！');
+    }
 }
 
 function GetCheckedGrp() {
@@ -120,7 +125,8 @@ function GetCheckedGrp() {
 }
 
 function GetMemberRow(today, rowCnt, element, isAfter) {
-    var dt = new Date(today.getFullYear(), today.getMonth() + 1, today.getDate());
+    // var dt = new Date(today.getFullYear(), today.getMonth() + 1, today.getDate());
+    var dt = new Date(today.getFullYear(), 8 + 1, 28);
     var birthday = new Date(dt.getFullYear(), element.month, element.day);
 
     if (isAfter) {
@@ -129,6 +135,11 @@ function GetMemberRow(today, rowCnt, element, isAfter) {
     } else {
         // 今日より前のみを取得する
         if (dt <= birthday) return;
+    }
+
+    if ($('#graduat_isdisp:checked').val() && element.is_graduat == '1') {
+        // 卒業生を表示しない
+        return;
     }
 
     if (dt.getTime() == birthday.getTime()) {

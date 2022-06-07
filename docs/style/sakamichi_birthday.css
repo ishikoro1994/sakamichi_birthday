@@ -106,6 +106,7 @@
   #today_birthday {
     margin-top: 0.5rem;
     margin-bottom: unset;
+    font-size: 16px;
   }
 
   #birthday_list_tbody td {
@@ -137,6 +138,7 @@
   #today_birthday {
     margin-top: 0.5rem;
     margin-bottom: unset;
+    font-size: 16px;
   }
 
   #birthday_list_tbody td {
@@ -168,6 +170,7 @@
   #today_birthday {
     margin-top: 0.5rem;
     margin-bottom: unset;
+    font-size: 14px;
   }
 
   #birthday_list_tbody td {
