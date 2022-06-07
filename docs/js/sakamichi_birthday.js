@@ -107,6 +107,7 @@ function SetBirthdayList() {
     });
 
     if (todayBirthMember.length > 0) {
+        $('#today_birthday').empty();
         $('#today_birthday').append('今日は下記メンバーのお誕生日です。');
         $('#today_birthday').append('</br>');
         todayBirthMember.forEach(function(e) {
@@ -115,6 +116,7 @@ function SetBirthdayList() {
         });
         $('#today_birthday').append('おめでとうございます！！');
     }
+    todayBirthMember = [];
 }
 
 function GetCheckedGrp() {
