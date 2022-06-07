@@ -143,12 +143,13 @@ function GetMemberRow(today, rowCnt, element, isAfter) {
         return;
     }
 
+    var memberName = element.member;
     if (element.is_graduat == '1') {
-        element.member += '(卒)';
+        memberName += '(卒)';
     }
 
     if (dt.getTime() == birthday.getTime()) {
-        todayBirthMember.push(element.group + ' ' + element.member);
+        todayBirthMember.push(element.group + ' ' + memberName);
     }
 
     var rowInfo = '';
@@ -161,7 +162,7 @@ function GetMemberRow(today, rowCnt, element, isAfter) {
     rowInfo += '<tr class="' + rowClass + '">';
     rowInfo += '<td class="month month_row">' + element.month + '月</td>';
     rowInfo += '<td class="group '+ grpClass +'">' + element.group + '</td>';
-    rowInfo += '<td class="member">' + element.member + '</td>';
+    rowInfo += '<td class="member">' + memberName + '</td>';
     let m = element.month;
     if (m.length == 1) m = '0' + m;
     let d = element.day;
