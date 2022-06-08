@@ -86,6 +86,15 @@
   height: 7px;
 }
 
+#tweet_label {
+  float: left;
+  margin-right: 0.2rem;
+}
+
+#tweet_area {
+  margin-top: 0.5rem;
+}
+
 /*ウィンドウ幅が767px以上の場合に適用*/
 @media screen and (min-width: 1025px) {
   /*ヘッダタイトル*/

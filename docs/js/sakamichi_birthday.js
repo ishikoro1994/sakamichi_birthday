@@ -48,8 +48,9 @@ function LoadBirthdayListJson() {
 }
 
 function SetBirthdayList() {
+    // 初期化
+    todayBirthMember = [];
     $('#birthday_list_tbl tbody').empty();
-
     $('#birthday_list_tbl').append('<tbody id="birthday_list_tbody">');
 
     var rowCnt = 0;
@@ -106,17 +107,42 @@ function SetBirthdayList() {
         }
     });
 
+    // 誕生日エリア設定
     if (todayBirthMember.length > 0) {
-        $('#today_birthday').empty();
-        $('#today_birthday').append('今日は下記メンバーのお誕生日です。');
-        $('#today_birthday').append('</br>');
+        $('#today_birthday_member').empty();
+        $('#today_birthday_member').append('今日は下記メンバーのお誕生日です。');
+        $('#today_birthday_member').append('</br>');
+        let birthdayMemberGrp = "";
+        let birthdayMemberName = "";
+        let today = new Date();
         todayBirthMember.forEach(function(e) {
-            $('#today_birthday').append('・' + e.toString() + 'さん');
-            $('#today_birthday').append('</br>');
+            birthdayMemberGrp = e.grp;
+            birthdayMemberName = e.member.toString().replace(' ', '');
+            $('#today_birthday_member').append('・' + e.grp + ' ' + e.member + 'さん');
+            $('#today_birthday_member').append('</br>');
         });
-        $('#today_birthday').append('おめでとうございます！！');
+        $('#today_birthday_member').append('おめでとうございます！！');
+
+        $('#tweet_area').empty();
+        $('#tweet_label').empty();
+        $('#tweet_label').text('お祝いメッセージを');
+        let hashtags = '';
+        hashtags += birthdayMemberGrp + ',';
+        hashtags += birthdayMemberName + '生誕祭,';
+        hashtags += birthdayMemberName + '生誕祭' + today.getFullYear();
+        // ツイートボタン作成
+        twttr.widgets.createShareButton(
+            "",
+            document.getElementById("tweet_area"),
+            {
+              text: '\n',
+              url: 'https://ishikoro1994.github.io/sakamichi_birthday/',
+              hashtags: hashtags,
+              lang: 'ja',
+              related: 'ishikoro1994'
+            }
+          );
     }
-    todayBirthMember = [];
 }
 
 function GetCheckedGrp() {
@@ -149,7 +175,8 @@ function GetMemberRow(today, rowCnt, element, isAfter) {
     }
 
     if (dt.getTime() == birthday.getTime()) {
-        todayBirthMember.push(element.group + ' ' + memberName);
+        let obj = {grp: element.group, member: memberName};
+        todayBirthMember.push(obj);
     }
 
     var rowInfo = '';
